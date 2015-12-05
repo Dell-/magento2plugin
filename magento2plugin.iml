@@ -10,5 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="php" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="php-openapi" level="project" />
+    <orderEntry type="library" name="phpstorm" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

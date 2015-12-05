@@ -58,6 +58,9 @@
   <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
+
+      <projectService serviceImplementation="com.magento.idea.magento2plugin.Settings"/>
+
       <psi.referenceContributor implementation="com.magento.idea.magento2plugin.xml.di.reference.DiReferenceContributor"/>
       <psi.referenceContributor implementation="com.magento.idea.magento2plugin.xml.observer.reference.ObserverReferenceContributor"/>
       <psi.referenceContributor implementation="com.magento.idea.magento2plugin.xml.observer.reference.EventReferenceContributor"/>
@@ -85,10 +88,16 @@
 
   <application-components>
     <!-- Add your application components here -->
+    <component>
+      <implementation-class>com.magento.idea.magento2plugin.Magento2ApplicationComponent</implementation-class>
+    </component>
   </application-components>
 
   <project-components>
     <!-- Add your project components here -->
+    <component>
+      <implementation-class>com.magento.idea.magento2plugin.Magento2ProjectComponent</implementation-class>
+    </component>
   </project-components>
 
   <actions>
